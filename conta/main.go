@@ -17,5 +17,5 @@ func main() {
 	valorCada(totalCada)
 }	
 func valorCada(totalCada float32) {
-	fmt.Println("Ficou R$", totalCada, "pra cada um")
+	fmt.Printf("Ficou R$%.2f pra cada um\n", totalCada)
 }
