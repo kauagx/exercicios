@@ -14,9 +14,9 @@ func main() {
 
 	novaIdade := idade + 1
 
-	geral(nome, idade, novaIdade)
+	geral(nome, novaIdade)
 }
 
-func geral(nome string, idade int, novaIdade int) {
+func geral(nome string, novaIdade int) {
 	fmt.Println(nome + ", no próximo aniversário você terá", novaIdade, "anos")
 }
