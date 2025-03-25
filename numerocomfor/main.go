@@ -8,10 +8,10 @@ func main() {
 		fmt.Print("Digite um número maior que 100: ")
 		fmt.Scan(&numeroMaior)
 
-		if numeroMaior > 100 {
+		if numeroMaior >= 100 {
 			break
 		}
-		fmt.Print("Peço que digite corretamente o que foi solicitado: ")
+		fmt.Println("Peço que digite corretamente o que foi solicitado: ")
 	}
 
 	for {
