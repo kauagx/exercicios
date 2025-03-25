@@ -1,0 +1,2 @@
+como deixar o R$ e o valor total pra cada sem espaço entre eles.
+pq na var totalCada, o totalPessoas tem que ficar daquela forma.

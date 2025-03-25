@@ -1,0 +1,2 @@
+Tem como exibir a mensagem pela func main, mas qual a diferenca de ficar criando outra função apenas para exibir a mensagem na tela
+como funciona o metodo que vai na func
