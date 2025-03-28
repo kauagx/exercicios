@@ -10,7 +10,7 @@ func main() {
 	fmt.Scan(&sexo)
 
 	/*
-	O || retorna verdadeiro se pelo menos uma condição for verdadeira
+		O || retorna verdadeiro se pelo menos uma condição for verdadeira
 	*/
 	if sexo == "M" || sexo == "F" {
 	} else {
@@ -29,7 +29,6 @@ func main() {
 
 	fmt.Printf("Seu IMC é: %.2f\n", IMC)
 
-	
 	if IMC < 18.5 {
 		fmt.Println("Você está abaixo do peso.")
 	} else if IMC < 25 {
@@ -38,5 +37,5 @@ func main() {
 		fmt.Println("Você está com sobrepeso.")
 	} else {
 		fmt.Println("Você está com obesidade.")
-	}	
-}	
+	}
+}
