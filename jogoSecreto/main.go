@@ -51,5 +51,5 @@ func main() {
 		}
 	}
 
-	fmt.Println("Você não acertou!. O número secreto era:", numeroSecreto)
+	fmt.Println("Você não acertou! O número secreto era:", numeroSecreto)
 }
