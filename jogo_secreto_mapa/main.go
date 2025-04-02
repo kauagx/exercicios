@@ -8,26 +8,21 @@ import (
 func main() {
 	numeroSecreto := rand.Intn(100) + 1
 
-	const (
-		nivel1 = 15
-		nivel2 = 10
-		nivel3 = 5
-	)
+	dificuldades := map[int]int{
+		1: 15,
+		2: 10,
+		3: 5,
+	}
 
-	fmt.Println("Escolha o nível de dificuldade do jogo (nivel1, nivel2, nivel3): ")
-	var nivelDificuldade string
+	fmt.Println("Escolha o nível de dificuldade do jogo (1, 2, 3): ")
+	var nivelDificuldade int
 	fmt.Scan(&nivelDificuldade)
 
 	//Criando a váriavel para armazenar as tentantivas de cada nivel
 	var maxTentativas int
 
-	if nivelDificuldade == "nivel1" {
-		maxTentativas = nivel1
-	} else if nivelDificuldade == "nivel2" {
-		maxTentativas = nivel2
-	} else if nivelDificuldade == "nivel3" {
-		maxTentativas = nivel3
-	} else {
+	maxTentativas, ok := dificuldades[nivelDificuldade]
+	if !ok {
 		fmt.Println("Nível inválido!")
 		return
 	}
